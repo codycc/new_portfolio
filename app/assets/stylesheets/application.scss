@@ -1,0 +1,128 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ */
+
+p , a , h1,h2,h3,h4,h5,h6 {
+  font-family: avenir-light;
+}
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+
+}
+
+.component {
+  height: 100%;
+}
+
+.showcase {
+  position: relative;
+
+  .first {
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    font-size: 95px;
+    margin-left:0px;
+    letter-spacing: 20px;
+    visibility: visible;
+  }
+  .last {
+    position: absolute;
+    bottom: 45px;
+    right: 0px;
+    font-size: 95px;
+    margin-right:0px;
+    letter-spacing: 20px;
+    visibility: visible;
+  }
+  .project-name {
+    font-size:40px;
+    font-weight:light;
+    font-color: grey;
+    margin-left:-40px;
+    position:absolute;
+    top: 0px;
+
+  }
+  .project-image {
+    width: 100%;
+    height: 400px;
+    background-image: url(http://placehold.it/350x150);
+    background-size:cover;
+  }
+  .text-description {
+    position:absolute;
+    top: 0px;
+  }
+
+  img {
+    z-index:1;
+    width: 100%;
+    height : auto;
+
+  }
+  .overlay {
+    position:absolute;
+    background-color:rgba(0, 0, 0, 0.51);
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (min-width:768px) {
+    .first {
+      margin-left:-110px;
+
+    }
+    .last {
+      margin-right:-110px;
+    }
+  }
+}
+
+.buttons {
+  visibility: hidden;
+  .next {
+    float:right;
+  }
+}
+
+.list {
+  width: 100%;
+  ul {
+    width:100%;
+    padding-left: 0px;
+    list-style-type: none;
+  }
+  li {
+    float:left;
+    width: 25%;
+    display:inline;
+    text-align:center;
+  }
+}
+
+//CLASSES FOR JAVASCRIPT
+.hidden {
+  visibility: hidden;
+
+}
+
+.show {
+  visibility: visible;
+}
