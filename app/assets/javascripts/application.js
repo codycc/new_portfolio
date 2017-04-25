@@ -39,6 +39,7 @@ var inspirationTilesData = ["drake_photo.jpg",
   "me_photo_2.jpg",
   "taronga_photo.jpg",
   "toronto_image_2.jpg",
+  "beach_image.jpg",
   "faith_photo.jpg"
 ];
 
