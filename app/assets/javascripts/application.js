@@ -82,6 +82,39 @@ $("a").click(function(e){
 });
 
 
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+        // Alternatively you could use:
+        // (new Image()).src = this;
+    });
+}
+
+// Usage:
+
+preload([
+    '/assets/beach_image.jpg',
+    '/assets/drake_photo.jpg',
+    '/assets/elon_musk.jpg',
+    '/assets/hong_kong.jpg',
+    '/assets/lil_yachty.jpeg',
+    '/assets/me_photo_2.jpg',
+    '/assetsme_photo.jpg',
+    '/assets/nike_image.jpg',
+    '/assets/sydney_photo.jpg',
+    '/assets/taronga_photo.jpg',
+    '/assets/toronto_image_2.jpg',
+    '/assets/toronto_image.jpg',
+    '/deepend_image.png',
+    '/efic_image.jpg',
+    '/london_eye_image.jpg',
+    '/sydney_icc_image.jpg',
+    '/sydney_tower_image.jpg',
+    '/sydney_writers_image.jpg'
+
+]);
+
+
 
 //helper functions
 helper = function() {
