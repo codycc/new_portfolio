@@ -47,32 +47,32 @@ var inspirationTilesData = ["drake_photo.jpg",
 var portfolioWork = [
   {
     "name": "Sydney Tower Eye",
-    "link": "www.sydneytowereye.com.au",
+    "link": "https://www.sydneytowereye.com.au/",
     "image": "sydney_tower_image.jpg"
   },
   {
     "name": "London Eye",
-    "link": "www.londoneye.com",
+    "link": "https://www.londoneye.com/",
     "image": "london_eye_image.jpg"
   },
   {
     "name": "ICC Sydney",
-    "link": "www.iccsydney.com.au",
+    "link": "http://www.iccsydney.com.au/",
     "image": "sydney_icc_image.jpg"
   },
   {
     "name": "EFIC: Export Credit Agency",
-    "link": "www.efic.gov.au",
+    "link": "https://www.efic.gov.au/",
     "image": "efic_image.jpg"
   },
   {
     "name": "Sydney Writer's Festival",
-    "link": "www.sydneywritersfestival.com.au",
+    "link": "https://www.swf.org.au/",
     "image": "sydney_writers_image.jpg"
   },
   {
     "name": "Deepend Group",
-    "link": "www.deependgroup.com.au",
+    "link": "http://www.deependgroup.com.au/",
     "image": "deepend_image.png"
   }
 ];

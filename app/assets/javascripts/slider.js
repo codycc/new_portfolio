@@ -47,6 +47,8 @@ $(document).ready(function(){
     $('.project-name').text(project.name);
     $('.project-name').fadeIn(2000);
     $(".project-image").css("background-image", "url(" + project.image + ")");
+
+    $(".visit").attr("href", project.link );
   }
 
 
