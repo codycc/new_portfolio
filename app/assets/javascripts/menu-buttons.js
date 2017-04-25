@@ -65,6 +65,7 @@ $(document).ready(function(){
     $('.hero-jumbo').animate({"width": "90%"}, 500);
     $('.inspiration-tiles').addClass('visible');
   });
+  
 
   $('.enter-link').mouseleave( function(e) {
     $('.hero-jumbo').animate({"width": "100%"},200);
