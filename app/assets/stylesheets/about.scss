@@ -4,6 +4,7 @@
   opacity: 0;
   height:900px;
   width: 100%;
+  z-index: -10;
   overflow-y:scroll;
   @media (min-width: 768px) {
     height: 60vh;
