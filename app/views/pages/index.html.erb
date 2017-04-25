@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="max-width:100%; overflow-x:hidden; height: 100%;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
-<body>
+<body style="max-width:100%; overflow-x:hidden; height: 100%;">
 
 
   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="overlay-2"></div>
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="visibility:hidden;">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -22,11 +23,22 @@
       <a class="navbar-brand" href="#">CODY CONDON</a>
     </div>
 
+    <ul class="nav navbar-nav navbar-right">
+    <p class="job-title">FRONT END DEVELOPER</p>
+    <li class="mobile-nav about-link-nav visible-xs">ABOUT</li>
+    <li class="mobile-nav portfolio-link-nav visible-xs">PORTFOLIO</li>
+    <li class="mobile-nav inspiration-link-nav visible-xs">INSPIRATION</li>
+    <li class="mobile-nav contact-link-nav visible-xs">CONTACT</li>
+
+    </ul>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"></a></li>
-      </ul>
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1" >
+    <ul>
+      <li class="mobile-nav about-link-nav visible-xs">ABOUT</li>
+      <li class="mobile-nav portfolio-link-nav visible-xs">PORTFOLIO</li>
+      <li class="mobile-nav contact-link-nav visible-xs">CONTACT</li>
+      <li class="mobile-nav inspiration-link-nav visible-xs">INSPIRATION</li>
+    </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
@@ -35,44 +47,156 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-2">
-        <div class="links-1">
-        </div>
       </div>
 
-      <div class="col-md-8 ">
+      <div class="col-md-8">
         <div class="showcase">
 
-          <h1 class="first">CODY</h1>
-          <h1 class="last">CONDON</h1>
+          <h1 class="welcome"> Welcome </h1>
+          <h1 class="first hidden-xs hidden-sm">CODY</h1>
+          <h1 class="last hidden-xs hidden-sm">CONDON</h1>
 
-          <h3 class="project-name">Project name</h3>
-          <p class="text-description"></p>
+          <div class="hero-jumbo visible">
+            <div class="rectangle"></div>
+            <div class="rectangle-2"></div>
+            <div class="overlay">
 
-          <div class="overlay"></div>
-          <div class="project-image"></div>
-          
+            </div>
+
+          </div>
+
+          <div class="about-me">
+            <div class="text-description">
+              <p>
+                I am here to create that stunning user experience for clients. Have over 2 years of programming experience with solid knowledge of , Javascript, HTML/CSS , and React
+                Working recently at a Digital Agency in Australia. I've worked with multiple international clients within a C#/.NET environment.. Teaming up with Designers, UI/UX, product managers and Backend Developers collabravity to ensure the clients needs are met while delivering a top notch product.</p>
+            </div>
+            <div class="photo-section">
+              <div class="overlay-2"></div>
+            </div>
+
+          </div>
+
+
+          <!-- PORTFOLIO -->
+          <div class="portfolio">
+            <h3 class="project-name">Project name</h3>
+            <div class="project-image">
+              <div class="overlay"></div>
+            </div>
+            <p class="text-description"></p>
+
+            <div class="buttons">
+              <a class="prev" href="">Prev</a>
+              <a class="next" href="">Next</a>
+            </div>
+          </div>
+
+
+          <div class="contact-tiles">
+            <div class="col-1">
+              <div class="tile tile-1">
+
+                <div class="tile-overlay">
+
+                </div>
+
+              </div>
+              <div class="tile tile-2">
+                <div class="tile-overlay"></div>
+              </div>
+
+              <a href="http://www.instagram.com/codimusic" target="_blank">
+                <div class="tile tile-3">
+                  <div class="tile-overlay">
+                    <p><i class="fa fa-instagram" aria-hidden="true"></i></p>
+                  </div>
+                </div>
+              </a>
+
+              <div class="tile tile-4">
+                <div class="tile-overlay"></div>
+              </div>
+            </div>
+
+            <div class="col-2">
+              <a href="http://www.twitter.com/codimusic" target="_blank">
+                <div class="tile tile-5">
+                  <div class="tile-overlay">
+                    <p><i class="fa fa-twitter" aria-hidden="true"></i></p>
+                  </div>
+                </div>
+              </a>
+              <a href="mailto:codycondon50@gmail.com" >
+              <div class="tile tile-6">
+                <div class="tile-overlay">
+                  <p><span class="glyphicon glyphicon-envelope"></span></p>
+                </div>
+
+              </div>
+              </a>
+              <div class="tile tile-7">
+                <div class="tile-overlay"></div>
+              </div>
+            </div>
+          </div>
+
+         <!-- INSPIRATION -->
+          <div class="inspiration-tiles">
+            <div class="col-1">
+              <div class="tile tile-1">
+                <div class="tile-overlay"></div>
+              </div>
+              <div class="tile tile-2">
+                <div class="tile-overlay"></div>
+              </div>
+              <div class="tile tile-3">
+                <div class="tile-overlay"></div>
+              </div>
+              <div class="tile tile-4">
+                <div class="tile-overlay"></div>
+              </div>
+            </div>
+
+            <div class="col-2">
+              <div class="tile tile-5">
+                <div class="tile-overlay"></div>
+              </div>
+              <div class="tile tile-6">
+                <div class="tile-overlay"></div>
+              </div>
+              <div class="tile tile-7">
+                <div class="tile-overlay"></div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
 
-        <div class="buttons">
-          <a class="prev" href="">Prev</a>
-          <a class="next" href="">Next</a>
-        </div>
 
-      <div class="list">
+
+      <div class="menu-listing">
         <ul>
-          <li class="about"><a href="">ABOUT</a></li>
-          <li class="portfolio"><a href="">PORTFOLIO</a></li>
-          <li class="contact"><a href="">CONTACT</a></li>
-          <li class="inspiration"><a href="">INSPIRATION</a></li>
+          <li class="about-link hidden-xs"><a href="">ABOUT</a></li>
+          <li class="portfolio-link hidden-xs"><a href="">PORTFOLIO</a></li>
+          <li class="contact-link hidden-xs"><a href="">CONTACT</a></li>
+          <li class="inspiration-link hidden-xs"><a href="">INSPIRATION</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-listing-2 visible">
+        <div class="white-block"></div>
+        <ul>
+          <li class="enter-link"><a href="">ENTER</a></li>
+
         </ul>
       </div>
 
       </div>
 
       <div class="col-md-2 ">
-        <div class="links-2">
 
-        </div>
       </div>
     </div>
   </div>

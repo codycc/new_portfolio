@@ -1,0 +1,168 @@
+.inspiration-tiles {
+  position:absolute;
+  top:0px;
+  width: 100%;
+  height:60vh;
+  opacity:0;
+  background-color:white;
+
+  .tile {
+    border: 5px solid white;
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    transition: opacity 3s ease-in-out;
+
+
+  }
+
+  .tile-overlay {
+    width: 100%;
+    height: 100%;
+    display:block;
+    background-color:rgba(0, 0, 0, 0.64);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        background-color:rgba(0, 0, 0, 0.34);
+
+    }
+
+  }
+
+
+  .col-1 {
+    width: 100%;
+    height: 100%;
+    float:left;
+    .tile-1 {
+      width: 100%;
+      height: 66.6%;
+      background: url("lil_yachty.jpeg");
+      background-size:cover;
+    }
+    .tile-2, {
+      float:left;
+      width: 33.3%;
+      height: 33.3%;
+      background: url("nike_image.jpg");
+      background-size:cover;
+    }
+    .tile-3 {
+      float:left;
+      width: 33.3%;
+      height: 33.3%;
+      background: url("drake_photo.jpg");
+      background-size:cover;
+
+    }
+    .tile-4 {
+      float:left;
+      width: 33.3%;
+      height: 33.3%;
+      background: url("toronto_image_2.jpg");
+      background-size:cover;
+    }
+  }
+  .col-2 {
+    width: 100%;
+    height: 100%;
+    float:left;
+
+    .tile-5 {
+      width: 50%;
+      height: 50%;
+      background: url("me_photo_2.jpg");
+      float:left;
+      background-size:cover;
+    }
+
+    .tile-6{
+      width: 50%;
+      height: 50%;
+      background: url("hong_kong.jpg");
+      float:left;
+      background-size:cover;
+    }
+
+    .tile-7 {
+      width: 100%;
+      height: 50%;
+      background: url("sydney_photo.jpg");
+      float:left;
+      background-size:cover;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .col-1 {
+      width: 60%;
+      height: 100%;
+      float:left;
+      .tile-1 {
+        width: 100%;
+        height: 66.6%;
+        background: url("lil_yachty.jpeg");
+        background-size:cover;
+      }
+      .tile-2, {
+        float:left;
+        width: 33.3%;
+        height: 33.3%;
+        background: url("nike_image.jpg");
+        background-size:cover;
+      }
+      .tile-3 {
+        float:left;
+        width: 33.3%;
+        height: 33.3%;
+        background: url("drake_photo.jpg");
+        background-size:cover;
+
+      }
+      .tile-4 {
+        float:left;
+        width: 33.3%;
+        height: 33.3%;
+        background: url("toronto_image_2.jpg");
+        background-size:cover;
+      }
+    }
+    .col-2 {
+      width: 40%;
+      height: 100%;
+      float:left;
+
+      .tile-5 {
+        width: 50%;
+        height: 50%;
+        background: url("me_photo_2.jpg");
+        float:left;
+        background-size:cover;
+      }
+
+      .tile-6{
+        width: 50%;
+        height: 50%;
+        background: url("hong_kong.jpg");
+        float:left;
+        background-size:cover;
+      }
+
+      .tile-7 {
+        width: 100%;
+        height: 50%;
+        background: url("sydney_photo.jpg");
+        float:left;
+        background-size:cover;
+      }
+    }
+  }
+}

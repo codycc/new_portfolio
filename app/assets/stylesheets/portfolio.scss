@@ -1,0 +1,37 @@
+//porfolio section
+.portfolio {
+  opacity:0;
+
+  .project-name {
+    font-family: "Avenir Next";
+    z-index:10;
+    font-weight:lighter;
+    font-size:50px;
+    color:white;
+    margin-left:20px;
+    position:absolute;
+    bottom: 11px;
+    right:0px;
+    display:none;
+    text-shadow: 2px 2px black;
+
+  }
+
+  .project-image {
+    width: 100%;
+    height: 60vh;
+    background-size:cover;
+    background-position:center;
+  }
+
+
+  .buttons {
+    .next {
+      float:right;
+      text-align:right;
+    }
+  }
+
+
+
+}

@@ -15,85 +15,74 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+//= require_slider
 
 
-$(document).ready(function(){
 
-  var portfolioWork = [
-    {
-      "name": "Sydney Tower Eye",
-      "link": "www.sydneytowereye.com.au",
-      "image": "sydney_tower_image.jpg"
-    },
-    {
-      "name": "London Eye",
-      "link": "www.londoneye.com",
-      "image": "london_eye_image.jpg"
-    },
-  ];
-  var count = 0;
+var count = 0;
+var tileDataRandom;
+var tilesRandomNumber;
+var tileInterval;
+var cyclePortfolio;
+var updateInspirationTiles;
+var helper;
+var updateContactTiles;
+var contactTileDataRandom;
+
+// used on inspiration pages
+var inspirationTilesData = ["drake_photo.jpg",
+ "hong_kong.jpg",
+  "lil_yachty.jpeg",
+  "elon_musk.jpg",
+  "sydney_photo_2.jpg",
+  "nike_image.jpg",
+  "me_photo_2.jpg",
+  "taronga_photo.jpg",
+  "toronto_image_2.jpg",
+  "faith_photo.jpg"
+];
 
 
-  //checking if the running count is greater or equal to the array length, if so, set back to zero
-  function checkPortfolioLength() {
-    if (count >= portfolioWork.length || count < 0) {
-      count = 0;
-    } else {
-      console.log('count is within array length');
-    }
+var portfolioWork = [
+  {
+    "name": "Sydney Tower Eye",
+    "link": "www.sydneytowereye.com.au",
+    "image": "sydney_tower_image.jpg"
+  },
+  {
+    "name": "London Eye",
+    "link": "www.londoneye.com",
+    "image": "london_eye_image.jpg"
+  },
+  {
+    "name": "ICC Sydney",
+    "link": "www.iccsydney.com.au",
+    "image": "sydney_icc_image.jpg"
+  },
+  {
+    "name": "EFIC: Export Credit Agency",
+    "link": "www.efic.gov.au",
+    "image": "efic_image.jpg"
+  },
+  {
+    "name": "Sydney Writer's Festival",
+    "link": "www.sydneywritersfestival.com.au",
+    "image": "sydney_writers_image.jpg"
+  },
+  {
+    "name": "Deepend Group",
+    "link": "www.deependgroup.com.au",
+    "image": "deepend_image.png"
   }
+];
 
-  //this is only called when clicking portfolio button, which will reset the running count and slider
-  function cyclePortfolio() {
-    count = 0;
-    checkPortfolioLength();
-    var project = portfolioWork[count];
-    updatePortfolio(project);
-  }
-
-  // updating the count to cycle through data plus count
-  function cyclePortfolioNext() {
-    count += 1;
-    checkPortfolioLength();
-    var project = portfolioWork[count];
-    updatePortfolio(project);
-  }
-
-  // updating the count to cycle through data minus count
-  function cyclePortfolioPrev() {
-    count -= 1;
-    checkPortfolioLength();
-    var project = portfolioWork[count];
-    updatePortfolio(project);
-  }
-
-  // the function that actually updates the elements
-  function updatePortfolio(project) {
-    $('.project-name').text(project.name);
-    $(".project-image").css("background-image", "url(" + project.image + ")");
-  }
-
-  // JQUERY EVENTS
-  $('.portfolio').click( function(e) {
-    e.preventDefault();
-    $(".first").addClass('hidden');
-    $(".last").addClass('hidden');
-
-    $(".buttons").addClass('show');
-
-    cyclePortfolio();
-  });
-
-  // NEXT BUTTON SLIDER
-  $('.next').click( function(e) {
-    e.preventDefault();
-    cyclePortfolioNext();
-  });
-
-  //PREV BUTTON SLIDER
-  $('.prev').click( function(e) {
-    e.preventDefault();
-    cyclePortfolioPrev();
-  });
-
+$("a").click(function(e){
+  if ($(this).css('opacity')==0) e.preventDefault();
 });
+
+
+
+//helper functions
+helper = function() {
+  clearInterval(tileInterval);
+}

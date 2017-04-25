@@ -1,0 +1,48 @@
+.hero-jumbo  {
+  height: 60vh;
+  width: 100%;
+  position:absolute;
+  opacity:0;
+  background: url("taronga_photo.jpg");
+
+  background-position:no-repeat;
+
+
+
+p {
+  position:absolute;
+  bottom: -10px;
+  right:0px;
+  font-size:40px;
+  color:white;
+}
+
+.rectangle {
+  position:absolute;
+  top:0px;
+  right:0px;
+  width: 50%;
+  height: 60vh;
+  background: rgba(0, 0, 0, 0.34);
+}
+
+.rectangle-2 {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width: 50%;
+  height: 60vh;
+  background: rgba(0, 0, 0, 0.34);
+}
+
+
+
+
+}
+
+.white-block {
+  height: 20px;
+  width: 90px;
+  background-color:rgba(255, 255, 255, 0.5);
+  position: absolute;
+}
