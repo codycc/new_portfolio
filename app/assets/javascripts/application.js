@@ -40,7 +40,21 @@ var inspirationTilesData = ["drake_photo.jpg",
   "taronga_photo.jpg",
   "toronto_image_2.jpg",
   "beach_image.jpg",
-  "faith_photo.jpg"
+  "faith_photo.jpg",
+  "bondi_image.jpg",
+  "building_image.jpg",
+  "emma_image.jpg",
+  "lil_wayne.jpg",
+  "louis_image.jpg",
+  "sydney_image.jpg",
+  "weeknd_image.jpg",
+  "yeezy_image.png",
+  "young_thug.jpg",
+  "rihanna_image.jpg",
+  "toronto_image_3.jpg",
+  "travis_image.jpg",
+  "winter_image.jpg",
+  "daniel_image.jpg"
 ];
 
 
@@ -93,6 +107,20 @@ function preload(arrayOfImages) {
 // Usage:
 
 preload([
+    '/assets/rihanna_image.jpg',
+    '/assets/toronto_image_3.jpg',
+    '/assets/travis_image.jpg',
+    '/assets/winter_image.jpg',
+    '/assets/daniel_image.jpg',
+    '/assets/bondi_image.jpg',
+    '/assets/building_image.jpg',
+    '/assets/emma_image.jpg',
+    '/assets/lil_wayne.jpg',
+    '/assets/louis_image.jpg',
+    '/assets/sydney_image.jpg',
+    '/assets/weeknd_image.jpg',
+    '/assets/yeezy_image.png',
+    '/assets/young_thug.jpg',
     '/assets/beach_image.jpg',
     '/assets/drake_photo.jpg',
     '/assets/elon_musk.jpg',
@@ -111,7 +139,6 @@ preload([
     '/sydney_icc_image.jpg',
     '/sydney_tower_image.jpg',
     '/sydney_writers_image.jpg'
-
 ]);
 
 
